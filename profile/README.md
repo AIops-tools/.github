@@ -1,0 +1,42 @@
+# AIops-tools
+
+> **Governed AI operations tooling for infrastructure** — audit, budget, undo, and graduated approval built into every tool.
+
+AI agents are great at infrastructure ops, right up until something goes wrong in
+production. **AIops-tools** is a family of MCP servers + CLIs that wrap real
+infrastructure platforms with a **governance harness**, so an agent's actions are:
+
+- **Audited** — every operation logged to a local SQLite trail (who / what / why / when), secret-redacted.
+- **Bounded** — per-process token/call budget + a runaway-loop breaker (no more "one operation, 26k tokens").
+- **Reversible** — write operations record an inverse **undo token** wherever a clean inverse exists.
+- **Graduated** — risk tiers gate writes by environment/tag; the highest tiers require a recorded approver.
+- **Safe by default** — destructive ops need double confirmation + `--dry-run`; all API text is sanitized.
+
+Every tool is **self-contained** (the harness is bundled — no shared runtime dependency) and ships on **PyPI**, the **MCP Registry**, and **ClawHub**.
+
+## Published tools
+
+| Tool | Platform | Install | MCP tools |
+|------|----------|---------|:--------:|
+| [**proxmox-aiops**](https://github.com/AIops-tools/Proxmox-AIops) | Proxmox VE — VMs, LXC containers, snapshots, cluster, storage | `pip install proxmox-aiops` | 23 |
+| [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions | `pip install veeam-aiops` | 12 |
+| [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (pods, deployments, nodes) | `pip install k8s-aiops` | _coming_ |
+
+## How it works
+
+Each tool exposes **both a CLI and an MCP server** (`<tool> mcp`, stdio transport).
+Point any MCP client (Claude, etc.) at it. Configuration and the audit/undo/policy
+store live under `~/.<tool>/` (relocatable via `<TOOL>_AIOPS_HOME`).
+
+```bash
+pip install proxmox-aiops          # or pipx / uv tool install
+proxmox-aiops doctor               # verify connectivity
+proxmox-aiops mcp                  # run as an MCP server
+```
+
+## License & affiliation
+
+MIT licensed. Community-maintained. **Not affiliated with, endorsed by, or sponsored
+by** the vendors of the platforms these tools operate (Proxmox Server Solutions GmbH,
+Veeam Software, the CNCF / Kubernetes project, etc.); all trademarks belong to their
+respective owners.
