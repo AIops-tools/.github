@@ -21,6 +21,7 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**proxmox-aiops**](https://github.com/AIops-tools/Proxmox-AIops) | Proxmox VE — VMs, LXC containers, snapshots, cluster, storage | `pip install proxmox-aiops` | 23 |
 | [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions | `pip install veeam-aiops` | 12 |
 | [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (pods, deployments, nodes) | `pip install k8s-aiops` | 15 |
+| [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 13 |
 
 ## How it works
 
