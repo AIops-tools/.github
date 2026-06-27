@@ -18,19 +18,22 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 
 | Tool | Platform | Install | MCP tools |
 |------|----------|---------|:--------:|
-| [**proxmox-aiops**](https://github.com/AIops-tools/Proxmox-AIops) | Proxmox VE — VMs, LXC containers, snapshots, cluster, storage | `pip install proxmox-aiops` | 23 |
-| [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions | `pip install veeam-aiops` | 12 |
-| [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (pods, deployments, nodes) | `pip install k8s-aiops` | 15 |
-| [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 13 |
+| [**proxmox-aiops**](https://github.com/AIops-tools/Proxmox-AIops) | Proxmox VE — VMs, LXC, snapshots, cluster, storage, backups, HA, pools, firewall | `pip install proxmox-aiops` | 39 |
+| [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions, infrastructure | `pip install veeam-aiops` | 21 |
+| [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (workloads, batch, config, storage, networking, rollouts) | `pip install k8s-aiops` | 51 |
+| [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 28 |
 
 ## How it works
 
 Each tool exposes **both a CLI and an MCP server** (`<tool> mcp`, stdio transport).
 Point any MCP client (Claude, etc.) at it. Configuration and the audit/undo/policy
-store live under `~/.<tool>/` (relocatable via `<TOOL>_AIOPS_HOME`).
+store live under `~/.<tool>/` (relocatable via `<TOOL>_AIOPS_HOME`). Credentials are
+kept in an **encrypted store** (`secrets.enc`, Fernet + master password) — never in
+plaintext. A friendly `<tool> init` wizard walks you through first-time setup.
 
 ```bash
 pip install proxmox-aiops          # or pipx / uv tool install
+proxmox-aiops init                 # interactive setup (encrypts your credentials)
 proxmox-aiops doctor               # verify connectivity
 proxmox-aiops mcp                  # run as an MCP server
 ```
