@@ -22,6 +22,8 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions, infrastructure | `pip install veeam-aiops` | 21 |
 | [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (workloads, batch, config, storage, networking, rollouts) | `pip install k8s-aiops` | 51 |
 | [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 28 |
+| [**truenas-aiops**](https://github.com/AIops-tools/TrueNAS-AIops) | TrueNAS SCALE storage — pools, datasets, snapshots, disks, alerts, services | `pip install truenas-aiops` | 21 |
+| [**ot-aiops**](https://github.com/AIops-tools/OT-AIops) | Industrial / OT data tap — OPC-UA, Modbus, S7comm, Mitsubishi MC, MTConnect, MQTT/Sparkplug B + cross-protocol diagnostics | `pip install ot-aiops` | 40 |
 
 ## How it works
 
