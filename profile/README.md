@@ -23,7 +23,8 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (workloads, batch, config, storage, networking, rollouts) | `pip install k8s-aiops` | 51 |
 | [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 28 |
 | [**truenas-aiops**](https://github.com/AIops-tools/TrueNAS-AIops) | TrueNAS SCALE storage — pools, datasets, snapshots, disks, alerts, services | `pip install truenas-aiops` | 21 |
-| [**ot-aiops**](https://github.com/AIops-tools/OT-AIops) | Industrial / OT data tap — OPC-UA, Modbus, S7comm, Mitsubishi MC, MTConnect, MQTT/Sparkplug B, EtherNet/IP, EtherCAT + diagnostics, OEE/downtime & asset inventory | `pip install ot-aiops` | 57 |
+
+> **Industrial / OT?** The OT line (formerly `ot-aiops`) has moved to its own org — **[Industrial-AIOps](https://github.com/industrial-aiops)** — and is now [**`iaiops`**](https://github.com/industrial-aiops/industrial-aiops) (`pip install iaiops`): OPC-UA, Modbus, S7comm, Mitsubishi MC, MTConnect, MQTT/Sparkplug B, EtherNet/IP, EtherCAT, and **SECS/GEM** for semiconductor / display fabs.
 
 ## How it works
 
