@@ -28,6 +28,7 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**ceph-aiops**](https://github.com/AIops-tools/Ceph-AIops) | Ceph via ceph-mgr Dashboard REST — HEALTH_WARN root-cause analysis, OSD/PG/pool/RBD/CephFS/RGW, recovery, capacity | `pip install ceph-aiops` | 35 |
 | [**inference-aiops**](https://github.com/AIops-tools/Inference-AIops) | GPU inference clusters (vLLM + Ray Serve/Jobs) — latency/utilization RCA, replica scaling, drain, model lifecycle, cost | `pip install inference-aiops` | 30 |
 | [**monitoring-aiops**](https://github.com/AIops-tools/Monitoring-AIops) | SolarWinds Orion (SWIS/SWQL) + Paessler PRTG — canned SWQL, alert dedup/rollup, health, maintenance windows | `pip install monitoring-aiops` | 31 |
+| [**compliance-aiops**](https://github.com/AIops-tools/Compliance-AIops) | **Meta-tool** — turns the audit trails these tools already write into framework-mapped (HIPAA/PCI-DSS/SOC 2/GDPR), hash-chain-sealed evidence bundles | `pip install compliance-aiops` | 15 |
 
 > **Industrial / OT?** The OT line (formerly `ot-aiops`) has moved to its own org — **[Industrial-AIOps](https://github.com/industrial-aiops)** — and is now [**`iaiops`**](https://github.com/industrial-aiops/industrial-aiops) (`pip install iaiops`): OPC-UA, Modbus, S7comm, Mitsubishi MC, MTConnect, MQTT/Sparkplug B, EtherNet/IP, EtherCAT, and **SECS/GEM** for semiconductor / display fabs.
 
