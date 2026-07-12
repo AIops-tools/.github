@@ -24,6 +24,10 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 28 |
 | [**truenas-aiops**](https://github.com/AIops-tools/TrueNAS-AIops) | TrueNAS SCALE storage — pools, datasets, snapshots, disks, alerts, services | `pip install truenas-aiops` | 21 |
 | [**endpoint-aiops**](https://github.com/AIops-tools/Endpoint-AIops) | Managed-endpoint fleets (thin clients / VDI) — login-storm & patch/config-drift analysis, inventory, guarded remediation | `pip install endpoint-aiops` | 9 |
+| [**nutanix-aiops**](https://github.com/AIops-tools/Nutanix-AIops) | Nutanix Prism Central (v4) — clusters, VMs (AHV + ESXi), storage, network, snapshots/DR, alerts, LCM; auto ETag + pagination | `pip install nutanix-aiops` | 47 |
+| [**ceph-aiops**](https://github.com/AIops-tools/Ceph-AIops) | Ceph via ceph-mgr Dashboard REST — HEALTH_WARN root-cause analysis, OSD/PG/pool/RBD/CephFS/RGW, recovery, capacity | `pip install ceph-aiops` | 35 |
+| [**inference-aiops**](https://github.com/AIops-tools/Inference-AIops) | GPU inference clusters (vLLM + Ray Serve/Jobs) — latency/utilization RCA, replica scaling, drain, model lifecycle, cost | `pip install inference-aiops` | 30 |
+| [**monitoring-aiops**](https://github.com/AIops-tools/Monitoring-AIops) | SolarWinds Orion (SWIS/SWQL) + Paessler PRTG — canned SWQL, alert dedup/rollup, health, maintenance windows | `pip install monitoring-aiops` | 31 |
 
 > **Industrial / OT?** The OT line (formerly `ot-aiops`) has moved to its own org — **[Industrial-AIOps](https://github.com/industrial-aiops)** — and is now [**`iaiops`**](https://github.com/industrial-aiops/industrial-aiops) (`pip install iaiops`): OPC-UA, Modbus, S7comm, Mitsubishi MC, MTConnect, MQTT/Sparkplug B, EtherNet/IP, EtherCAT, and **SECS/GEM** for semiconductor / display fabs.
 
