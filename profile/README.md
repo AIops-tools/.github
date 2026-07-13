@@ -31,6 +31,9 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**monitoring-aiops**](https://github.com/AIops-tools/Monitoring-AIops) | SolarWinds Orion (SWIS/SWQL) + Paessler PRTG — canned SWQL, alert dedup/rollup, health, maintenance windows | `pip install monitoring-aiops` | 31 |
 | [**compliance-aiops**](https://github.com/AIops-tools/Compliance-AIops) | **Meta-tool** — turns the audit trails these tools already write into framework-mapped (HIPAA/PCI-DSS/SOC 2/GDPR), hash-chain-sealed evidence bundles | `pip install compliance-aiops` | 15 |
 | [**ai-guardian**](https://github.com/AIops-tools/AI-Guardian) | On-endpoint local-LLM (Ollama) observability + governance — model allow/deny policy, provenance drift, a deterministic secrets/PII/jailbreak prompt scanner, and route-through guarding | `pip install ai-guardian-aiops` | 18 |
+| [**postgres-aiops**](https://github.com/AIops-tools/Postgres-AIops) | PostgreSQL DBA-ops — slow-query / bloat / blocking-lock RCA, indexes, vacuum/analyze, replication lag, guarded remediation | `pip install postgres-aiops` | 33 |
+| [**observability-aiops**](https://github.com/AIops-tools/Observability-AIops) | Self-hosted observability — Prometheus + Grafana: firing-alert & scrape-target RCA, alert noise/flap analysis, silences, dashboards | `pip install observability-aiops` | 30 |
+| [**firewall-aiops**](https://github.com/AIops-tools/Firewall-AIops) | OPNsense + pfSense firewalls — gateway-health / rule-shadow / blocked-traffic RCA, guarded rule & alias writes | `pip install firewall-aiops` | 32 |
 
 > **Industrial / OT?** The OT line (formerly `ot-aiops`) has moved to its own org — **[Industrial-AIOps](https://github.com/industrial-aiops)** — and is now [**`iaiops`**](https://github.com/industrial-aiops/industrial-aiops) (`pip install iaiops`): OPC-UA, Modbus, S7comm, Mitsubishi MC, MTConnect, MQTT/Sparkplug B, EtherNet/IP, EtherCAT, and **SECS/GEM** for semiconductor / display fabs.
 
