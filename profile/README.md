@@ -22,6 +22,7 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions, infrastructure | `pip install veeam-aiops` | 21 |
 | [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (workloads, batch, config, storage, networking, rollouts) | `pip install k8s-aiops` | 51 |
 | [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox | `pip install network-aiops` | 28 |
+| [**fabric-aiops**](https://github.com/AIops-tools/Fabric-AIops) | Network **controllers** — Cisco Meraki Dashboard API (org→network→device); uplink loss/latency RCA, fleet health score, config-template drift, guarded remediation | `pip install fabric-aiops` | 32 |
 | [**truenas-aiops**](https://github.com/AIops-tools/TrueNAS-AIops) | TrueNAS SCALE storage — pools, datasets, snapshots, disks, alerts, services | `pip install truenas-aiops` | 21 |
 | [**endpoint-aiops**](https://github.com/AIops-tools/Endpoint-AIops) | Managed-endpoint fleets (thin clients / VDI) — login-storm & patch/config-drift analysis, inventory, guarded remediation | `pip install endpoint-aiops` | 9 |
 | [**nutanix-aiops**](https://github.com/AIops-tools/Nutanix-AIops) | Nutanix Prism Central (v4) — clusters, VMs (AHV + ESXi), storage, network, snapshots/DR, alerts, LCM; auto ETag + pagination | `pip install nutanix-aiops` | 47 |
