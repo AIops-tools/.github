@@ -1,15 +1,17 @@
 # AIops-tools
 
-> **Governed AI operations tooling for infrastructure** — audit, budget, undo, and graduated approval built into every tool.
+> **Governed AI operations tooling for infrastructure** — unbypassable audit, budget, and undo built into every tool.
 
 AI agents are great at infrastructure ops, right up until something goes wrong in
 production. **AIops-tools** is a family of MCP servers + CLIs that wrap real
-infrastructure platforms with a **governance harness**, so an agent's actions are:
+infrastructure platforms with a **governance harness**. Each tool delivers the
+operation accurately and efficiently and records every step; whether a write is
+permitted is the agent's judgement or the connecting account's permissions — not
+the tool's. So an agent's actions are:
 
-- **Audited** — every operation logged to a local SQLite trail (who / what / why / when), secret-redacted.
-- **Bounded** — per-process token/call budget + a runaway-loop breaker (no more "one operation, 26k tokens").
+- **Audited** — every operation, over MCP **and** the CLI, logged to a local SQLite trail (who / what / when), secret-redacted. There is no unaudited entry point.
+- **Bounded** — a runaway-loop breaker + optional per-process call/time ceilings (no more "one operation, 26k tokens"). A safety backstop, not an authorization gate.
 - **Reversible** — write operations record an inverse **undo token** wherever a clean inverse exists.
-- **Graduated** — risk tiers gate writes by environment/tag; the highest tiers require a recorded approver.
 - **Safe by default** — destructive ops need double confirmation + `--dry-run`; all API text is sanitized.
 
 Every tool is **self-contained** (the harness is bundled — no shared runtime dependency) and ships on **PyPI**, the **MCP Registry**, and **ClawHub**.
