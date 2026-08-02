@@ -14,7 +14,7 @@ the tool's. So an agent's actions are:
 - **Reversible** — write operations record an inverse **undo token** wherever a clean inverse exists.
 - **Safe by default** — destructive ops need double confirmation + `--dry-run`; all API text is sanitized.
 
-Every tool is **self-contained** (the harness is bundled — no shared runtime dependency) and ships on **PyPI**, the **MCP Registry**, and **ClawHub**.
+Every tool is **self-contained** (the harness is bundled — no shared runtime dependency) and ships on **PyPI**, the **MCP Registry**, **ClawHub**, and **SkillHub**.
 
 ## Published tools
 
@@ -25,7 +25,7 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (workloads, batch, config, storage, networking, rollouts); pod-health & workload-readiness RCA | `pip install k8s-aiops` | 55 |
 | [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox; interface-health & BGP-neighbor RCA | `pip install network-aiops` | 33 |
 | [**fabric-aiops**](https://github.com/AIops-tools/Fabric-AIops) | Network **controllers** — Cisco Meraki, Cisco Catalyst Center, Arista CloudVision, Ubiquiti UniFi (org→network→device); uplink loss/latency RCA, fleet health score, config-template drift, guarded remediation | `pip install fabric-aiops` | 34 |
-| [**truenas-aiops**](https://github.com/AIops-tools/TrueNAS-AIops) | TrueNAS SCALE storage — pools, datasets, snapshots, disks, alerts, services; pool-health & alert/capacity RCA | `pip install truenas-aiops` | 25 |
+| [**truenas-aiops**](https://github.com/AIops-tools/TrueNAS-AIops) | TrueNAS SCALE storage — pools, datasets, snapshots, disks, alerts, services; pool-health & alert/capacity RCA. Speaks **both** the REST API and the JSON-RPC/WebSocket API that replaces it in TrueNAS 26 | `pip install truenas-aiops` | 25 |
 | [**endpoint-aiops**](https://github.com/AIops-tools/Endpoint-AIops) | Managed-endpoint fleets (thin clients / VDI) — login-storm & patch/config-drift analysis, inventory, guarded remediation | `pip install endpoint-aiops` | 13 |
 | [**nutanix-aiops**](https://github.com/AIops-tools/Nutanix-AIops) | Nutanix Prism Central (v4) — clusters, VMs (AHV + ESXi), storage, network, snapshots/DR, alerts, LCM; cluster-health & alert-triage RCA; auto ETag + pagination | `pip install nutanix-aiops` | 51 |
 | [**ceph-aiops**](https://github.com/AIops-tools/Ceph-AIops) | Ceph via ceph-mgr Dashboard REST — HEALTH_WARN root-cause analysis, OSD/PG/pool/RBD/CephFS/RGW, recovery, capacity | `pip install ceph-aiops` | 37 |
