@@ -21,7 +21,7 @@ Every tool is **self-contained** (the harness is bundled — no shared runtime d
 | Tool | Platform | Install | MCP tools |
 |------|----------|---------|:--------:|
 | [**proxmox-aiops**](https://github.com/AIops-tools/Proxmox-AIops) | Proxmox VE — VMs, LXC, snapshots, cluster, storage, backups, HA, pools, firewall; node-pressure & guest-health RCA | `pip install proxmox-aiops` | 43 |
-| [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions, infrastructure; job-failure & repository-capacity RCA | `pip install veeam-aiops` | 25 |
+| [**veeam-aiops**](https://github.com/AIops-tools/Veeam-AIops) | Veeam Backup & Replication — jobs, restore, repositories, sessions, infrastructure; job-failure & repository-capacity RCA; per-VM backup storage usage | `pip install veeam-aiops` | 27 |
 | [**k8s-aiops**](https://github.com/AIops-tools/K8s-AIops) | Kubernetes — k3s / EKS / GKE / AKS (workloads, batch, config, storage, networking, rollouts); pod-health & workload-readiness RCA | `pip install k8s-aiops` | 55 |
 | [**network-aiops**](https://github.com/AIops-tools/Network-AIops) | Network devices via NAPALM — Cisco IOS/NX-OS/IOS-XR, Arista EOS, Juniper Junos + NetBox; interface-health & BGP-neighbor RCA | `pip install network-aiops` | 33 |
 | [**fabric-aiops**](https://github.com/AIops-tools/Fabric-AIops) | Network **controllers** — Cisco Meraki, Cisco Catalyst Center, Arista CloudVision, Ubiquiti UniFi (org→network→device); uplink loss/latency RCA, fleet health score, config-template drift, guarded remediation | `pip install fabric-aiops` | 34 |
