@@ -14,7 +14,7 @@ the tool's. So an agent's actions are:
 - **Reversible** — write operations record an inverse **undo token** wherever a clean inverse exists.
 - **Safe by default** — destructive ops need double confirmation + `--dry-run`; all API text is sanitized.
 
-Every tool is **self-contained** (the harness is bundled — no shared runtime dependency) and ships on **PyPI**, the **MCP Registry**, **ClawHub**, and **SkillHub**.
+Every tool is **self-contained** (the harness is bundled — no shared runtime dependency) and ships on **PyPI**, the **MCP Registry**, **ClawHub** (skill *and* OpenClaw bundle plugin, `@aiops-tools/<tool>`), **SkillHub**, and the **Claude Code plugin marketplace** (`/plugin marketplace add AIops-tools/marketplace`).
 
 ## Published tools
 
